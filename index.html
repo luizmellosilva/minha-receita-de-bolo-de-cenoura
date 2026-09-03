@@ -1,39 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>receita de bolo</title>
+    <meta name="description" content="Receita de bolo de cenoura fofinho com cobertura de chocolate.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Bolo de cenoura | Receita de casa</title>
 </head>
 <body>
-    <header>receita de bolo de cenoura</header>
-
-    <section class="galeria"></section>
-  
-    <div class="conteudo">
-        <div class="card">
-            <h2>Ingredientes da massa</h2>
-            <ul>
-                <li>3 cenouras medias picadas</li>
-                <li>3 ovos</li>
-                <li>1 xícara de óleo</li>
-                <li>1 colher de sopa de fermento em pó</li>
-                <li>2 xícaras de farinha</li>
-
-            </ul>
-    </div>
-
-    <div class="card">
-        <h2>Ingredientes a cobertura</h2>
-        <ul>
-            <li>1 xícara de chá de açucar</li>
-            <li>1 xícara de chá de achocolatado</li>
-            <li>2 colheres de sopa de manteiga</li>
-            <li>4 a 6 colheres de sopa de leite ou água</li>
-        </ul>
-
-    </div>
-
-    
+    <header class="topbar">
+        <a class="brand" href="#topo" aria-label="Receita de casa, início"><span>RC</span> receita de casa</a>
+        <nav aria-label="Navegação principal"><a href="#ingredientes">Ingredientes</a><a href="#preparo">Preparo</a><button class="icon-button" id="print-button" type="button" title="Imprimir receita" aria-label="Imprimir receita">⌁</button></nav>
+    </header>
+    <main id="topo">
+        <section class="hero" aria-labelledby="titulo">
+            <div class="hero-copy"><p class="eyebrow">Receita afetiva <span></span> 45 min</p><h1 id="titulo">Bolo de<br><em>cenoura</em></h1><p class="intro">Fofinho, dourado e com aquela cobertura de chocolate que faz qualquer café da tarde virar memória boa.</p><div class="hero-actions"><a class="primary-button" href="#ingredientes">Começar receita <span>↓</span></a><button class="secondary-button" id="share-button" type="button"><span>↗</span> Compartilhar</button></div></div>
+            <div class="hero-image" role="img" aria-label="Fatia de bolo de cenoura com cobertura de chocolate"></div><div class="hero-note"><strong>01</strong><span>O clássico que<br>nunca falha</span></div>
+        </section>
+        <section class="recipe-meta" aria-label="Informações da receita"><div><span class="meta-icon">◷</span><p><small>Tempo total</small><strong>45 minutos</strong></p></div><div><span class="meta-icon">♨</span><p><small>Dificuldade</small><strong>Fácil</strong></p></div><div><span class="meta-icon">◒</span><p><small>Rendimento</small><strong>10 fatias</strong></p></div><div class="rating"><span>★★★★★</span><p><small>Avaliação da casa</small><strong>5.0 (128)</strong></p></div></section>
+        <section class="recipe-layout">
+            <aside class="ingredients" id="ingredientes"><div class="section-heading"><p class="eyebrow">O que você vai precisar</p><h2>Ingredientes</h2></div><div class="servings-control"><span>Porções</span><div><button type="button" data-change="-1" aria-label="Diminuir porções">−</button><strong id="servings">10</strong><button type="button" data-change="1" aria-label="Aumentar porções">+</button></div></div><p class="check-hint">Toque nos itens conforme separar</p><h3>Massa</h3><ul class="ingredient-list"><li><label><input type="checkbox"><span class="checkmark"></span><span><b data-base="3">3</b> cenouras médias picadas</span></label></li><li><label><input type="checkbox"><span class="checkmark"></span><span><b data-base="3">3</b> ovos</span></label></li><li><label><input type="checkbox"><span class="checkmark"></span><span><b data-base="1">1</b> xícara de óleo</span></label></li><li><label><input type="checkbox"><span class="checkmark"></span><span><b data-base="1">1</b> colher de sopa de fermento em pó</span></label></li><li><label><input type="checkbox"><span class="checkmark"></span><span><b data-base="2">2</b> xícaras de farinha de trigo</span></label></li><li><label><input type="checkbox"><span class="checkmark"></span><span><b data-base="2">2</b> xícaras de açúcar</span></label></li></ul><h3>Cobertura</h3><ul class="ingredient-list"><li><label><input type="checkbox"><span class="checkmark"></span><span>1 xícara de açúcar</span></label></li><li><label><input type="checkbox"><span class="checkmark"></span><span>1 xícara de achocolatado</span></label></li><li><label><input type="checkbox"><span class="checkmark"></span><span>2 colheres de sopa de manteiga</span></label></li><li><label><input type="checkbox"><span class="checkmark"></span><span>4 a 6 colheres de leite ou água</span></label></li></ul></aside>
+            <section class="method" id="preparo"><div class="section-heading"><p class="eyebrow">Passo a passo</p><h2>Modo de preparo</h2></div><ol class="steps"><li><span>01</span><div><h3>Prepare a massa</h3><p>No liquidificador, bata as cenouras, os ovos e o óleo até formar um creme liso.</p></div></li><li><span>02</span><div><h3>Junte os secos</h3><p>Despeje em uma tigela e misture a farinha, o açúcar e o fermento delicadamente.</p></div></li><li><span>03</span><div><h3>Leve ao forno</h3><p>Coloque em forma untada e asse em forno preaquecido a 180°C por cerca de 35 minutos.</p><button class="timer-button" id="timer-button" type="button">▶ Iniciar timer <span id="timer">35:00</span></button></div></li><li><span>04</span><div><h3>Finalize</h3><p>Leve os ingredientes da cobertura ao fogo baixo até engrossar. Espalhe sobre o bolo ainda morno.</p></div></li></ol><div class="tip"><span>✦</span><p><strong>Dica da casa</strong><br>Não abra o forno antes de 30 minutos para o bolo crescer bem.</p></div></section>
+        </section>
+    </main>
+    <footer><span>receita de casa</span><span>Feito para compartilhar à mesa.</span></footer>
 </body>
 </html>
